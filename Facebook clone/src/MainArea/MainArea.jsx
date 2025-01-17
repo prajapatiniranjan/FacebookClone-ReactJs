@@ -1,6 +1,12 @@
 import React from "react";
-import './MainArea.css';
-import { FaFontAwesomeFlag, FaMedrt, FaFacebookMessenger, FaAngleDown, FaUserFriends } from 'react-icons/fa';
+import "./MainArea.css";
+import {
+  FaFontAwesomeFlag,
+  FaMedrt,
+  FaFacebookMessenger,
+  FaAngleDown,
+  FaUserFriends,
+} from "react-icons/fa";
 
 function MainArea() {
   return (
@@ -30,15 +36,33 @@ function MainArea() {
           <FaAngleDown color="green" fontSize="2rem" />
           <div>See More</div>
         </div>
+        <br />
+        <br />
+        <div className="Profiles">
+          <img src="" alt="logo" style={{ height: "35px", padding: "1rem" }} />
+           React Developer
+        </div>
+        <div className="Profiles">
+          <img src="" alt="logo" style={{ height: "35px", padding: "1rem" }} />
+          Java Developer
+        </div>
+        <div className="Profiles">
+          <img src="" alt="logo" style={{ height: "35px", padding: "1rem" }} />
+          MERN Developer
+        </div>
+        <div className="Profiles">
+          <img src="" alt="logo" style={{ height: "35px", padding: "1rem" }} />
+          MEAN Developer
+        </div>
+        <div className="Pross">
+          <FaAngleDown color="Blue" fontSize="2rem"/>
+          <div>See More</div>
+        </div>
       </div>
 
-      <div className="MainArea">
-        Middle
-      </div>
+      <div className="MainArea">Middle</div>
 
-      <div className="Lside">
-        Lside
-      </div>
+      <div className="Lside">Lside</div>
     </div>
   );
 }
