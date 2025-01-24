@@ -16,6 +16,7 @@ body{
 
 .Homepage{
     display: grid;
+    width: 100%;
 }
 
 .header{

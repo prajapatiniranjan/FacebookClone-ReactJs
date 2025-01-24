@@ -1,13 +1,17 @@
 import React from "react";
 import "./MainArea.css";
+
 import {
   FaFontAwesomeFlag,
   FaMedrt,
   FaFacebookMessenger,
   FaAngleDown,
   FaUserFriends,
+  FaSearch,
+  FaGrin,
 } from "react-icons/fa";
-
+import { MdMoreHoriz, MdVideoCall } from "react-icons/md";
+import {AiFillFileImage} from "react-icons/ai"
 function MainArea() {
   return (
     <div className="Main">
@@ -40,7 +44,7 @@ function MainArea() {
         <br />
         <div className="Profiles">
           <img src="" alt="logo" style={{ height: "35px", padding: "1rem" }} />
-           React Developer
+          React Developer
         </div>
         <div className="Profiles">
           <img src="" alt="logo" style={{ height: "35px", padding: "1rem" }} />
@@ -55,14 +59,142 @@ function MainArea() {
           MEAN Developer
         </div>
         <div className="Pross">
-          <FaAngleDown color="Blue" fontSize="2rem"/>
+          <FaAngleDown color="Blue" fontSize="2rem" />
           <div>See More</div>
         </div>
       </div>
+      <div className="MainArea">
+        <div className="addStory">
+          <div className="Story">
+            <img
+              src=""
+              alt="IMG"
+              style={{ height: "60px", width: "50%", borderRadius: "60%" }}
+            />
+            <div className="StoryName">Jai Shree Shyaam</div>
+          </div>
 
-      <div className="MainArea">Middle</div>
+          <div className="Story">
+            <img
+              src=""
+              alt="IMG"
+              style={{ height: "60px", width: "50%", borderRadius: "60%" }}
+            />
+            <div className="StoryName">Dwayne Johnson</div>
+          </div>
 
-      <div className="Lside">Lside</div>
+          <div className="Story">
+            <img
+              src=""
+              alt="IMG"
+              style={{ height: "60px", width: "50%", borderRadius: "60%" }}
+            />
+            <div className="StoryName">Niranjan Prajapati</div>
+          </div>
+
+          <div className="Story">
+            <img
+              src=""
+              alt="IMG"
+              style={{ height: "60px", width: "50%", borderRadius: "60%" }}
+            />
+            <div className="StoryName">Mrs. Mahi</div>
+          </div>
+
+          <div className="Story">
+            <img
+              src=""
+              alt="IMG"
+              style={{ height: "60px", width: "50%", borderRadius: "60%" }}
+            />
+            <div className="StoryName">Bipin</div>
+            <div className="message">
+        <div className="Post">
+            <img src="" alt="PIC" />
+            <input type="Mind" placeholder="What's on your mind, Niranjan" />
+        </div>
+        <div className="Call">
+            <div className="ico">
+                <div className="icone">
+                    <MdVideoCall fontSize="2rem" color="red" />
+                    <div>Live Video</div>
+                </div>
+                <div className="icone">
+                    <AiFillFileImage fontSize="2rem" color="green" />
+                    <div>Photo/Video</div>
+                </div>
+                <div className="icone">
+                    <FaGrin fontSize="2rem" color="orange" />
+                    <div>Feeling/Activity</div>
+                </div>
+            </div>
+        </div>
+    </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="Lside">
+        <div className="Contact">
+          <div className="Contacts">
+            Contacts{" "}
+            <div className="Chaticon">
+              <div className="icons">
+                <MdVideoCall fontSize="1.8rem" />
+                <div className="icons">
+                  <FaSearch fontSize="1.8rem" />
+                </div>
+                <div className="icons">
+                  <MdMoreHoriz fontSize="1.8rem" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="concise">
+          <div className="Profilee">
+            <img
+              src=""
+              alt=""
+              style={{ height: "35px", padding: "1rem", borderRadius: "50%" }}
+            />
+            Mr. Max Prajapati
+          </div>
+          <div className="Profilee">
+            <img
+              src=""
+              alt=""
+              style={{ height: "35px", padding: "1rem", borderRadius: "50%" }}
+            />
+            Mr. Max Prajapati
+          </div>
+          <div className="Profilee">
+            <img
+              src=""
+              alt=""
+              style={{ height: "35px", padding: "1rem", borderRadius: "50%" }}
+            />
+            Mr. Max Prajapati
+          </div>
+          <div className="Profilee">
+            <img
+              src=""
+              alt=""
+              style={{ height: "35px", padding: "1rem", borderRadius: "50%" }}
+            />
+            Mr. Max Prajapati
+          </div>
+          <div className="Profilee">
+            <img
+              src=""
+              alt=""
+              style={{ height: "35px", padding: "1rem", borderRadius: "50%" }}
+            />
+            Mr. Max Prajapati
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
