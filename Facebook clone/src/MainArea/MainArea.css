@@ -143,9 +143,12 @@
 }
 .message{
     display: grid;
-    width: 80px;
+    width: 40rem;
     height: 25rem;
-    margin-left: 5\%;
+    margin-right:35rem;
+    margin-top: 6rem;
+
+    
 }
 .Post{
     margin-top: 10%;
@@ -193,4 +196,7 @@ input[type=Mind]{
     justify-content: center;
     margin: 0 50px;
     font-size: 1rem;
+}
+.icone{
+  justify-content: center;
 }

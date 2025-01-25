@@ -11,7 +11,7 @@ import {
   FaGrin,
 } from "react-icons/fa";
 import { MdMoreHoriz, MdVideoCall } from "react-icons/md";
-import {AiFillFileImage} from "react-icons/ai"
+import { AiFillFileImage } from "react-icons/ai";
 function MainArea() {
   return (
     <div className="Main">
@@ -109,27 +109,30 @@ function MainArea() {
             />
             <div className="StoryName">Bipin</div>
             <div className="message">
-        <div className="Post">
-            <img src="" alt="PIC" />
-            <input type="Mind" placeholder="What's on your mind, Niranjan" />
-        </div>
-        <div className="Call">
-            <div className="ico">
-                <div className="icone">
+              <div className="Post">
+                <img src="" alt="PIC" />
+                <input
+                  type="Mind"
+                  placeholder="What's on your mind, Niranjan"
+                />
+              </div>
+              <div className="Call">
+                <div className="ico">
+                  <div className="icone">
                     <MdVideoCall fontSize="2rem" color="red" />
                     <div>Live Video</div>
-                </div>
-                <div className="icone">
+                  </div>
+                  <div className="icone">
                     <AiFillFileImage fontSize="2rem" color="green" />
                     <div>Photo/Video</div>
-                </div>
-                <div className="icone">
+                  </div>
+                  <div className="icone">
                     <FaGrin fontSize="2rem" color="orange" />
                     <div>Feeling/Activity</div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
           </div>
         </div>
       </div>
