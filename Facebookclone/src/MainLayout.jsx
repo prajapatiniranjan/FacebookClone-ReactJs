@@ -1,46 +1,37 @@
 import React from "react";
 import { Outlet, NavLink } from "react-router-dom";
-import { Facebook } from "lucide-react"; // Using the Facebook logo from lucide-react
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="main-layout">
       {/* Header */}
-      <header className="bg-blue-600 text-white p-4 flex items-center justify-between shadow-lg fixed w-full z-10">
-        <div className="flex items-center space-x-2">
-          <Facebook className="w-6 h-6" />
-          <span className="text-lg font-bold">Facebook Clone</span>
+      <header className="header">
+        <div className="header-logo">
+          <Facebook className="logo" />
+          <span className="header-title">Facebook Clone</span>
         </div>
-        <nav className="space-x-4">
+        <nav className="nav">
           <NavLink
-            to="/home"
-            className={({ isActive }) =>
-              isActive ? "text-yellow-300 font-semibold" : "text-white"
-            }
+            to="/main/home"
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
           >
             Home
           </NavLink>
           <NavLink
-            to="/groups"
-            className={({ isActive }) =>
-              isActive ? "text-yellow-300 font-semibold" : "text-white"
-            }
+            to="/main/groups"
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
           >
             Groups
           </NavLink>
           <NavLink
-            to="/video"
-            className={({ isActive }) =>
-              isActive ? "text-yellow-300 font-semibold" : "text-white"
-            }
+            to="/main/video"
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
           >
             Video
           </NavLink>
           <NavLink
-            to="/video-games"
-            className={({ isActive }) =>
-              isActive ? "text-yellow-300 font-semibold" : "text-white"
-            }
+            to="/main/video-games"
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
           >
             Video Games
           </NavLink>
@@ -48,7 +39,7 @@ const MainLayout = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-grow mt-16 p-4 bg-gray-100">
+      <main className="main-content">
         <Outlet />
       </main>
     </div>
