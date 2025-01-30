@@ -7,6 +7,7 @@ import Home from "./Home";
 // import Groups from "./Groups";  
 // import Video from "./Video";    
 // import VideoGames from "./VideoGames";  
+import PrivateRoute from "./PrivateRoute";
 
 function App() {
   return (
@@ -14,12 +15,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        
-        <Route path="/main" element={<MainLayout />}>
-          {/* <Route path="home" element={<Home />} />
-          <Route path="groups" element={<Groups />} />
+
+        {/* Protected Routes */}
+        <Route path="/main" element={<PrivateRoute><MainLayout /></PrivateRoute>}>
+          <Route path="home" element={<Home />} />
+          {/* <Route path="groups" element={<Groups />} /> */}
           <Route path="video" element={<Video />} />
-          <Route path="video-games" element={<VideoGames />} /> */}
+          <Route path="video-games" element={<VideoGames />} />
         </Route>
       </Routes>
     </Router>
